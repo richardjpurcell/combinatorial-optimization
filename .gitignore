@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.DS_Store
+venv/
+output_grids/
+presentations/
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# Copernicus ID
+.cdsapirc
+
+# NetCDF
+*.nc
