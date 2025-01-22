@@ -1,0 +1,36 @@
+
+
+grid size = 3 x 3
+grid cell size = 1000m
+time slot = 60 minutes
+total time slots = 12
+total drones = 1
+max drone battery life = 6 time slots
+drone speed = 1 grid cell / time slot
+drone recharge time = 1 time slot
+
+drone base station = upper left hand corner cell 
+all drones begin from base station
+drones return to base station to recharge
+designate each cell in (x, y) form
+
+If drone visits a cell during a time slot then visited = 1
+If no drone visits a cell during a time slot then visited = 0
+A drone travelling through a cell enroute to another cell counts as visited = 1
+coverage score = sum of visited / time slot
+total coverage = sum of coverage scores / total time slots
+
+First solve TSP for each cell and store results.
+Using TSP results use NSP to create possible schedules and store results.
+Using KP and drone constraints (i.e. max drone battery) select best schedule from NSP results.
+
+Details of each time slice:
+-drone location, destination, battery life
+-each cell's visited/no_visited score
+-coverage score
+
+
+
+
+
+
