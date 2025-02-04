@@ -1,0 +1,12 @@
+Paradigm,Description,Common Problems,Combinatorial?,Examples of Algorithms/Techniques
+Greedy,Makes local optimal choices to achieve a global solution.,"Fractional Knapsack, Huffman Coding, MST",Yes (except Shortest Path),"Kruskal's, Prim's, Dijkstra's"
+Dynamic Programming (DP),Breaks problems into overlapping subproblems and solves them recursively.,"0/1 Knapsack, TSP, LCS","Yes (except LCS, Matrix Chain Multiplication)","Bellman-Ford, Floyd-Warshall, Knapsack DP"
+Backtracking,"Builds solutions incrementally, backtracking when constraints are violated.","N-Queens, Subset Sum, Graph Coloring",Yes,"Recursive Backtracking, Sudoku Solver"
+Branch and Bound,"Explores the solution space, pruning suboptimal solutions using bounds.","TSP, 0/1 Knapsack, Job Scheduling",Yes (except Job Scheduling),"Branch-and-Cut, Branch-and-Price"
+Divide and Conquer,"Divides problems into smaller parts, solves them, and combines solutions.","Closest Pair of Points, Maximum Subarray, Merge Sort",No,"Kadane's Algorithm, Recursive Merge Sort"
+Heuristics,Uses approximations or rules of thumb for 'good enough' solutions.,"TSP, Job Scheduling, Graph Coloring",Yes (except Job Scheduling),"Nearest Neighbor Heuristic, Greedy Coloring"
+Metaheuristics,High-level strategies for near-optimal solutions in large problems.,"TSP, VRP, Nurse Scheduling",Yes (except Nurse Scheduling),"Genetic Algorithms, Simulated Annealing, Ant Colony"
+Constraint Programming,Solves problems by defining constraints and finding feasible solutions.,"Graph Coloring, Sudoku, Nurse Scheduling",Yes (except Nurse Scheduling),"Constraint Satisfaction Algorithms, MIP solvers"
+Exact Algorithms,Explores the entire solution space for optimal solutions.,"0/1 Knapsack, Facility Location, Maximum Flow",Yes (except Maximum Flow),"Mixed Integer Programming (MIP), Integer Linear Programming (ILP)"
+Approximation Algorithms,Provides solutions close to the optimum for NP-hard problems.,"TSP, Vertex Cover, Set Cover",Yes,"Christofides Algorithm, Approximation Schemes"
+Randomized Algorithms,Introduces randomness to simplify or improve average-case performance.,"Graph Coloring, Closest Pair of Points, Subset Sum",Yes (except Closest Pair of Points),"Randomized Quick Sort, Monte Carlo Methods"
